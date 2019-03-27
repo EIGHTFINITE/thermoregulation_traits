@@ -1,0 +1,56 @@
+trait_svafa_ectothermic = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+
+	opposites = { "trait_svafa_homeothermic" "trait_svafa_thermogenic" }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	custom_tooltip = TRAIT_SVAFA_ECTOTHERMIC_EFFECT
+
+	modifier = {
+		pc_desert_habitability = 0.1
+		pc_arid_habitability = 0.1
+		pc_savannah_habitability = 0.1
+		pc_arctic_habitability = -0.1
+		pc_alpine_habitability = -0.1
+		pc_tundra_habitability = -0.1
+	}
+}
+
+trait_svafa_homeothermic = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+
+	opposites = { "trait_svafa_ectothermic" "trait_svafa_thermogenic" }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	custom_tooltip = TRAIT_SVAFA_HOMEOTHERMIC_EFFECT
+
+	modifier = {
+		pc_ocean_habitability = 0.1
+		pc_continental_habitability = 0.1
+		pc_tropical_habitability = 0.1
+		pc_desert_habitability = -0.05
+		pc_arid_habitability = -0.05
+		pc_savannah_habitability = -0.05
+		pc_arctic_habitability = -0.05
+		pc_alpine_habitability = -0.05
+		pc_tundra_habitability = -0.05
+	}
+}
+
+trait_svafa_thermogenic = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+
+	opposites = { "trait_svafa_homeothermic" "trait_svafa_ectothermic" }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	custom_tooltip = TRAIT_SVAFA_THERMOGENIC_EFFECT
+
+	modifier = {
+		pc_arctic_habitability = 0.1
+		pc_alpine_habitability = 0.1
+		pc_tundra_habitability = 0.1
+		pc_desert_habitability = -0.1
+		pc_arid_habitability = -0.1
+		pc_savannah_habitability = -0.1
+	}
+}
