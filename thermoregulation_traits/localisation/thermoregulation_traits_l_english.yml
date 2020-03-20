@@ -1,10 +1,10 @@
 ﻿l_english:
  trait_svafa_ectothermic:0 "Ectothermic"
- trait_svafa_ectothermic_desc:0 "§LThis species does not produce enough internal heat to sustain itself and requires consistent warmer temperatures to manage its body temperature.§!"
+ trait_svafa_ectothermic_desc:0 "§LThis species does not produce enough internal heat and requires consistent warmer temperatures to manage its body temperature.§!"
  TRAIT_SVAFA_ECTOTHERMIC_EFFECT:0 "§YDry Climate§! Habitability §G+10%§!\n§EFrozen Climate§! Habitability §R-10%§!"
  trait_svafa_homeothermic:0 "Endothermic"
  trait_svafa_homeothermic_desc:0 "§LThis species is able to maintain its body temperature despite variations in its environment, but struggles at the extremes.§!"
  TRAIT_SVAFA_HOMEOTHERMIC_EFFECT:0 "§GWet Climate§! Habitability §G+10%§!\n§YDry Climate§! Habitability §R-5%§!\n§EFrozen Climate§! Habitability §R-5%§!"
  trait_svafa_thermogenic:0 "Thermogenic"
- trait_svafa_thermogenic_desc:0 "§LThis species generates large amounts of excess heat, making it well suited to colder environments but prone to overheating in warmer climates.§!"
+ trait_svafa_thermogenic_desc:0 "§LThis species radiates large amounts of excess heat, making it well suited to colder environments but prone to overheating in warmer climates.§!"
  TRAIT_SVAFA_THERMOGENIC_EFFECT:0 "§EFrozen Climate§! Habitability §G+10%§!\n§YDry Climate§! Habitability §R-10%§!"
