@@ -3,7 +3,7 @@ trait_svafa_ectothermic = {
 	potential_crossbreeding_chance = 1.0
 
 	opposites = { "trait_svafa_homeothermic" "trait_svafa_thermogenic" }
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	allowed_archetypes = { BIOLOGICAL LITHOID PRESAPIENT }
 	custom_tooltip = TRAIT_SVAFA_ECTOTHERMIC_EFFECT
 
 	modifier = {
@@ -21,7 +21,7 @@ trait_svafa_homeothermic = {
 	potential_crossbreeding_chance = 1.0
 
 	opposites = { "trait_svafa_ectothermic" "trait_svafa_thermogenic" }
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	allowed_archetypes = { BIOLOGICAL LITHOID PRESAPIENT }
 	custom_tooltip = TRAIT_SVAFA_HOMEOTHERMIC_EFFECT
 
 	modifier = {
@@ -42,7 +42,7 @@ trait_svafa_thermogenic = {
 	potential_crossbreeding_chance = 1.0
 
 	opposites = { "trait_svafa_homeothermic" "trait_svafa_ectothermic" }
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	allowed_archetypes = { BIOLOGICAL LITHOID PRESAPIENT }
 	custom_tooltip = TRAIT_SVAFA_THERMOGENIC_EFFECT
 
 	modifier = {
