@@ -7,4 +7,4 @@ tags={
 }
 picture="thermoregulation_traits.png"
 remote_file_id="1695870732"
-supported_version="2.6.*"
+supported_version="3.0.*"
