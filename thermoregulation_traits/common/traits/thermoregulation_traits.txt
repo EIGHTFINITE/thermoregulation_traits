@@ -1,11 +1,19 @@
 trait_svafa_ectothermic = {
 	cost = 0
-	potential_crossbreeding_chance = 1.0
-
-	opposites = { "trait_svafa_homeothermic" "trait_svafa_thermogenic" }
-	allowed_archetypes = { BIOLOGICAL LITHOID PRESAPIENT }
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_infernal" "trait_svafa_homeothermic" "trait_svafa_thermogenic" }
+	allowed_archetypes = { BIOLOGICAL }
+	tags = { organic positive habitability }
 	custom_tooltip = TRAIT_SVAFA_ECTOTHERMIC_EFFECT
-
 	modifier = {
 		pc_desert_habitability = 0.1
 		pc_arid_habitability = 0.1
@@ -18,12 +26,20 @@ trait_svafa_ectothermic = {
 
 trait_svafa_homeothermic = {
 	cost = 0
-	potential_crossbreeding_chance = 1.0
-
-	opposites = { "trait_svafa_ectothermic" "trait_svafa_thermogenic" }
-	allowed_archetypes = { BIOLOGICAL LITHOID PRESAPIENT }
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_infernal" "trait_svafa_ectothermic" "trait_svafa_thermogenic" }
+	allowed_archetypes = { BIOLOGICAL }
+	tags = { organic positive habitability }
 	custom_tooltip = TRAIT_SVAFA_HOMEOTHERMIC_EFFECT
-
 	modifier = {
 		pc_ocean_habitability = 0.1
 		pc_continental_habitability = 0.1
@@ -39,12 +55,39 @@ trait_svafa_homeothermic = {
 
 trait_svafa_thermogenic = {
 	cost = 0
-	potential_crossbreeding_chance = 1.0
-
-	opposites = { "trait_svafa_homeothermic" "trait_svafa_ectothermic" }
-	allowed_archetypes = { BIOLOGICAL LITHOID PRESAPIENT }
+	category = normal
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_infernal" "trait_svafa_homeothermic" "trait_svafa_ectothermic" }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { PLANT FUN }
+	localized_tags = {
+		SPECIES_TRAIT_FUNGOID
+		SPECIES_TRAIT_PLANTOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			OR = {
+				can_add_or_remove_phenotype_traits = yes
+				can_add_transgenic_traits = yes
+			}
+		}
+	}
+	tags = { organic positive plantoid fungoid habitability }
 	custom_tooltip = TRAIT_SVAFA_THERMOGENIC_EFFECT
-
 	modifier = {
 		pc_arctic_habitability = 0.1
 		pc_alpine_habitability = 0.1
